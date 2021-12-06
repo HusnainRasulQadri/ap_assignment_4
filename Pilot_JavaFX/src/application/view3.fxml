@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Pane fx:id="paneTitle" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="260.0" stylesheets="@application.css">
+         <children>
+            <Pane layoutX="11.0" layoutY="24.0" prefHeight="410.0" prefWidth="240.0" styleClass="mainPane" stylesheets="@application.css">
+               <children>
+                  <Pane fx:id="currencyConvertor" layoutX="7.0" layoutY="130.0" onMouseClicked="#onMoneyChoice" prefHeight="75.0" prefWidth="225.0" styleClass="highlight" stylesheets="@application.css">
+                     <children>
+                        <ImageView fx:id="view31" fitHeight="50.0" fitWidth="41.0" layoutX="24.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@exchange.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="65.0" layoutY="30.0" text="Currency Convertor" textFill="#fffbfb">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                     </children></Pane>
+                  <Pane fx:id="view1" layoutX="30.0" layoutY="5.0" onMouseClicked="#onViewClicked" prefHeight="50.0" prefWidth="50.0" styleClass="highlight" stylesheets="@application.css">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="8.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@calculator.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="view2" layoutX="95.0" layoutY="5.0" onMouseClicked="#onViewClicked" prefHeight="50.0" prefWidth="50.0" styleClass="highlight" stylesheets="@application.css">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="8.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="view3" layoutX="160.0" layoutY="5.0" onMouseClicked="#onViewClicked" prefHeight="50.0" prefWidth="50.0" styleClass="highlight" stylesheets="@application.css">
+                     <children>
+                        <ImageView fx:id="view3" fitHeight="50.0" fitWidth="41.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@exchange.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="investment" layoutX="7.0" layoutY="260.0" onMouseClicked="#onMoneyChoice" prefHeight="75.0" prefWidth="225.0" styleClass="highlight" stylesheets="@application.css">
+                     <children>
+                        <Label layoutX="78.0" layoutY="30.0" text="Investment" textFill="#fffbfb">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="view311" fitHeight="34.0" fitWidth="34.0" layoutX="31.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@return-on-investment.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane prefHeight="21.0" prefWidth="260.0">
+               <children>
+                  <ImageView fx:id="closeButton" fitHeight="16.0" fitWidth="16.0" layoutX="225.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@close.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="47.0" layoutY="3.0" text="Calculator" textFill="#fafafa" />
+                  <ImageView fx:id="minimizeButton" fitHeight="16.0" fitWidth="16.0" layoutX="205.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@hide.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="25.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@calculator.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

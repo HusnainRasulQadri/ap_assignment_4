@@ -1,0 +1,9 @@
+Github Link:
+https://github.com/HusnainRasulQadri/ap_assignment_4.git
+
+Name:Hunsnain Rasul Qadri
+Roll No:19I-0441
+
+Instructions:
+1) Please at any time while inputting if you want to input in another text field click on it.
+2) If you have already added the value and then changed the currency of any field press equals('=') to get the new value.
